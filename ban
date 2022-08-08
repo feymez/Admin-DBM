@@ -3,12 +3,20 @@
   "permissions": "BAN_MEMBERS",
   "permissions2": "ADMINISTRATOR",
   "restriction": "1",
-  "_id": "jjOGh",
+  "_id": "ZsTCB",
   "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "admin_tag",
+      "name": "Store Member Info"
+    },
     {
       "member": "5",
       "varName": "Osoba",
-      "reason": "${slashParams(\"Powod\")}",
+      "reason": "${slashParams(\"Powod\")} | ${tempVars(\"admin_tag\")}",
       "days": "",
       "name": "Ban Member"
     },
