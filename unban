@@ -6,8 +6,16 @@
   "_id": "vXFbm",
   "actions": [
     {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "admin_tag",
+      "name": "Store Member Info"
+    },
+    {
       "id": "${slashParams(\"ID\")}",
-      "reason": "${slashParams(\"Powod\")}",
+      "reason": "${slashParams(\"Powod\")} | ${tempVars(\"admin_tag\")}",
       "name": "Unban Id Member"
     },
     {
