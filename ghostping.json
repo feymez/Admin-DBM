@@ -1,0 +1,92 @@
+{
+  "name": "ghostping",
+  "temp": "deleted_message",
+  "event-type": "18",
+  "_id": "xAMjU",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "deleted_message",
+      "info": "2",
+      "storage": "1",
+      "varName2": "message_text",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "message_text",
+      "comparison": "5",
+      "value": "<@",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "message_text",
+      "comparison": "5",
+      "value": ">",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "message": "1",
+      "varName": "deleted_message",
+      "info": "4",
+      "storage": "1",
+      "varName2": "message_channel",
+      "name": "Store Message Info"
+    },
+    {
+      "channel": "103",
+      "varName": "992450032450150410",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Ghostping",
+          "url": "",
+          "color": "ff0000",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "",
+          "fields": [
+            {
+              "name": "Treść",
+              "value": "${tempVars(\"message_text\")}",
+              "inline": "false"
+            },
+            {
+              "name": "Kanał",
+              "value": "${tempVars(\"message_channel\")}",
+              "inline": "false"
+            }
+          ],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}
