@@ -17,3 +17,17 @@ W Channel ID wklejamy ID kanału na którym mają się pojawiać zgłoszenia <br
 
 We go to action # 7 <br>
 In the Channel ID, paste the ID of the channel on which the reports should appear <br>
+
+# Konfiguracja Verification
+
+Wchodzimy do akcji Send Message <br>
+Przechodzimy do zakładki Buttons <br>
+Wybieramy przycisk "Weryfikacja" <br>
+W akcji #2 zmieniamy ID roli na roli tej którą mamy otrzymać po weryfikacji <br>
+
+# Verification Configuration
+
+We go to action Send Message <br>
+We go to the Buttons tab <br>
+Select the "Verification" button <br>
+In action #2, we change the role ID on the role that we are to receive after verification <br>
