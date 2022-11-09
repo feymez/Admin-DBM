@@ -1,0 +1,315 @@
+{
+    "name": "report",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "foZZo",
+    "actions": [
+      {
+        "member": "1",
+        "varName": "",
+        "info": "1",
+        "storage": "1",
+        "varName2": "command_user_id",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "5",
+        "varName": "Osoba",
+        "info": "1",
+        "storage": "1",
+        "varName2": "reported_user_id",
+        "name": "Store Member Info"
+      },
+      {
+        "storage": "1",
+        "varName": "reported_user_id",
+        "comparison": "2",
+        "value": "tempVars(\"command_user_id\")",
+        "branch": {
+          "iftrue": "0",
+          "iffalse": "2",
+          "iffalseVal": "6"
+        },
+        "name": "Check Variable"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "ff0000",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Nie możesz zgłosić samego siebie.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "title": "Zgłoszenie",
+        "textInputs": [
+          {
+            "name": "Powód:",
+            "placeholder": "Wpisz powód zgłoszenia...",
+            "minLength": "0",
+            "maxLength": "1000",
+            "id": "report_reason",
+            "row": "",
+            "style": "PARAGRAPH",
+            "required": "true"
+          }
+        ],
+        "name": "Show Modal"
+      },
+      {
+        "channel": "103",
+        "varName": "ID-KANALU-REPORTOW",
+        "message": "",
+        "buttons": [
+          {
+            "name": "Przyjmij",
+            "type": "SUCCESS",
+            "id": "msg-button-b95e3dd",
+            "row": "",
+            "url": "",
+            "emoji": "",
+            "mode": "PUBLIC",
+            "time": "",
+            "actions": [
+              {
+                "member": "1",
+                "varName": "",
+                "info": "21",
+                "storage": "1",
+                "varName2": "button_user_tag",
+                "name": "Store Member Info"
+              },
+              {
+                "channel": "101",
+                "varName": "${tempVars(\"command_user_id\")}",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "00ff00",
+                    "timestamp": "false",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "**Twoje zgłoszenie zostało rozpatrzone pozytywnie!**\n\nDziękujemy za Twoją pomoc w ulepszaniu naszego community!",
+                    "fields": [],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "${tempVars(\"button_user_tag\")}",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              {
+                "storage": "1",
+                "varName": "report_message",
+                "type": "allButtons",
+                "disable": "disable",
+                "searchValue": "",
+                "name": "Disable Buttons and Selects"
+              }
+            ]
+          },
+          {
+            "name": "Odrzuć",
+            "type": "DANGER",
+            "id": "msg-button-2a78f59",
+            "row": "",
+            "url": "",
+            "emoji": "",
+            "mode": "PUBLIC",
+            "time": "",
+            "actions": [
+              {
+                "member": "1",
+                "varName": "",
+                "info": "21",
+                "storage": "1",
+                "varName2": "button_user_tag",
+                "name": "Store Member Info"
+              },
+              {
+                "title": "Odrzucenie zgłoszenia",
+                "textInputs": [
+                  {
+                    "name": "Powód:",
+                    "placeholder": "Wpisz powód odrzucenia zgłoszenia...",
+                    "minLength": "0",
+                    "maxLength": "1000",
+                    "id": "decilne_reason",
+                    "row": "",
+                    "style": "PARAGRAPH",
+                    "required": "true"
+                  }
+                ],
+                "name": "Show Modal"
+              },
+              {
+                "channel": "101",
+                "varName": "${tempVars(\"command_user_id\")}",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "false",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "**Twoje zgłoszenie zostało rozpatrzone negatywnie!**\n\nDziękujemy za chęć pomocy w ulepszaniu naszego community!\n\n**Powód odrzucenia zgłoszenia:**\n\n${tempVars(\"decilne_reason\")}",
+                    "fields": [],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "${tempVars(\"button_user_tag\")}",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              {
+                "storage": "1",
+                "varName": "report_message",
+                "type": "allButtons",
+                "disable": "disable",
+                "searchValue": "",
+                "name": "Disable Buttons and Selects"
+              }
+            ]
+          }
+        ],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "ff0000",
+            "timestamp": "true",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Osoba zgłaszająca:** ${member}\n\n**Osoba zgłaszana:** <@${tempVars(\"reported_user_id\")}>\n\n**Powód zgłoszenia:**\n\n${tempVars(\"report_reason\")}",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "1",
+        "varName2": "report_message",
+        "name": "Send Message"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "00ff00",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Zgłoszenie zostało wysłane do administracji**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "4",
+    "description": "Zgłoś innego użytkownika",
+    "parameters": [
+      {
+        "name": "Osoba",
+        "description": "Wybierz osobę którą chcesz zgłosić...",
+        "type": "USER",
+        "required": true,
+        "choices": null
+      }
+    ]
+  }
