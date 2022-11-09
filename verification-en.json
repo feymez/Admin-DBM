@@ -1,0 +1,103 @@
+{
+    "name": "verification",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "4",
+    "_id": "foZZo",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [
+          {
+            "name": "Verification",
+            "type": "SUCCESS",
+            "id": "msg-button-deb49a8",
+            "row": "1",
+            "url": "",
+            "emoji": "✅",
+            "mode": "PERSISTENT",
+            "time": "",
+            "actions": [
+              {
+                "channel": "0",
+                "varName": "",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "#00ff1e",
+                    "timestamp": "false",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "**Verification was successful.**",
+                    "fields": [],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": true,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              {
+                "member": "1",
+                "varName2": "",
+                "role": "101",
+                "varName": "VERIFICATION-ROLE-ID",
+                "reason": "Verification",
+                "name": "Add Member Role"
+              }
+            ]
+          }
+        ],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "Verification",
+            "url": "",
+            "color": "RANDOM",
+            "timestamp": "true",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**Verify yourself to get full access to the server.**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": false,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "4",
+    "description": "Verification.",
+    "event-type": "0"
+  }
