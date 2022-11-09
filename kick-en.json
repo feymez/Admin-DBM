@@ -1,0 +1,159 @@
+{
+    "name": "kick",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "foZZo",
+    "actions": [
+      {
+        "member": "1",
+        "varName": "",
+        "permission": "KICK_MEMBERS",
+        "branch": {
+          "iftrue": "2",
+          "iffalse": "0",
+          "iftrueVal": "5"
+        },
+        "name": "Check Member Permissions"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "permission": "ADMINISTRATOR",
+        "branch": {
+          "iftrue": "2",
+          "iffalse": "0",
+          "iftrueVal": "5"
+        },
+        "name": "Check Member Permissions"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "",
+            "url": "",
+            "color": "ff0000",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**You do not have the appropriate permissions!**",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": true,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "21",
+        "storage": "1",
+        "varName2": "command_user_tag",
+        "name": "Store Member Info"
+      },
+      {
+        "storage": "4",
+        "varName": "Reason",
+        "comparison": "0",
+        "value": "",
+        "branch": {
+          "iftrue": "0",
+          "iffalse": "2",
+          "iffalseVal": "10"
+        },
+        "name": "Check Variable"
+      },
+      {
+        "member": "5",
+        "varName": "User",
+        "reason": "${slashParams(\"Reason\")} | ${tempVars(\"command_user_tag\")}",
+        "name": "Kick Member"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "**User ${slashParams(\"User\")} was kicked out by ${member}**",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "5",
+        "varName": "User",
+        "reason": "No reason was given | ${tempVars(\"command_user_tag\")}",
+        "name": "Kick Member"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "**User ${slashParams(\"User\")} was kicked out by ${member}**",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "4",
+    "parameters": [
+      {
+        "name": "User",
+        "description": "Select the user you want to kick.",
+        "type": "USER",
+        "required": true,
+        "choices": null
+      },
+      {
+        "name": "Reason",
+        "description": "Enter the reason for kicking the user on the server.",
+        "type": "STRING",
+        "required": false,
+        "choices": null
+      }
+    ]
+  }
