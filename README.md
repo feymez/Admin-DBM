@@ -1,6 +1,8 @@
 # Admin-DBM
 Raw daty komend administracyjnych. Discord Bot Maker
 
+# Admin-DBM
+Raw date of administrative commands. Discord Bot Maker
 
 # Konfiguracja Ghostping
 
