@@ -1,0 +1,745 @@
+{
+    "name": "ghostping",
+    "temp": "deleted_message",
+    "event-type": "18",
+    "_id": "xAMjU",
+    "actions": [
+      {
+        "message": "1",
+        "varName": "deleted_message",
+        "info": "2",
+        "storage": "1",
+        "varName2": "message_text",
+        "name": "Store Message Info"
+      },
+      {
+        "message": "1",
+        "varName": "deleted_message",
+        "info": "3",
+        "storage": "1",
+        "varName2": "message_author",
+        "name": "Store Message Info"
+      },
+      {
+        "member": "2",
+        "varName": "message_author",
+        "info": "21",
+        "storage": "1",
+        "varName2": "member_tag",
+        "name": "Store Member Info"
+      },
+      {
+        "message": "1",
+        "varName": "deleted_message",
+        "info": "4",
+        "storage": "1",
+        "varName2": "message_channel",
+        "name": "Store Message Info"
+      },
+      {
+        "channel": "3",
+        "varName": "message_channel",
+        "info": "1",
+        "storage": "1",
+        "varName2": "current_channel_id",
+        "name": "Store Channel Info"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "dataName": "current_channel",
+        "changeType": "0",
+        "value": "tempVars(\"current_channel_id\")",
+        "name": "Control Server Data"
+      },
+      {
+        "storage": "1",
+        "varName": "message_text",
+        "comparison": "5",
+        "value": "<@",
+        "branch": {
+          "iftrue": "0",
+          "iffalse": "1"
+        },
+        "name": "Check Variable"
+      },
+      {
+        "storage": "1",
+        "varName": "message_text",
+        "comparison": "5",
+        "value": ">",
+        "branch": {
+          "iftrue": "0",
+          "iffalse": "1"
+        },
+        "name": "Check Variable"
+      },
+      {
+        "storage": "1",
+        "varName": "message_text",
+        "branches": [
+          {
+            "comparison": "5",
+            "value": "1",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "2",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "3",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "4",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "5",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "6",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "7",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "8",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "9",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          },
+          {
+            "comparison": "5",
+            "value": "0",
+            "actions": [
+              {
+                "server": "0",
+                "varName": "",
+                "dataName": "current_channel",
+                "defaultVal": "0",
+                "storage": "1",
+                "varName2": "current_channel_2",
+                "name": "Store Server Data"
+              },
+              {
+                "channel": "103",
+                "varName": "ID-KANAŁU-LOGÓW",
+                "message": "",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "",
+                    "url": "",
+                    "color": "ff0000",
+                    "timestamp": "true",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "Autor",
+                        "value": "${tempVars(\"message_author\")} - *`${tempVars(\"member_tag\")}`*",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Treść",
+                        "value": "${tempVars(\"message_text\")}",
+                        "inline": "false"
+                      },
+                      {
+                        "name": "Kanał",
+                        "value": "<#${tempVars(\"current_channel_2\")}>",
+                        "inline": "false"
+                      }
+                    ],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          }
+        ],
+        "name": "Multi-Check Variable"
+      }
+    ]
+  }
