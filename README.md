@@ -4,9 +4,15 @@ Raw daty komend administracyjnych. Discord Bot Maker
 
 # Konfiguracja Ghostping
 
-Wchodzimy do akcji #9
-W każdym z warunków mamy umieszczoną akcję Send Message
-W każdej z tych akcji podajemy ID kanału Discord na którym chcemy mieć logi ghostpingów
+Wchodzimy do akcji #9 <br>
+W każdym z warunków mamy umieszczoną akcję Send Message <br>
+W każdej z tych akcji podajemy ID kanału Discord na którym chcemy mieć logi ghostpingów <br>
+
+# Ghostping Configuration
+
+We go to action #9 <br>
+In each of the conditions we have a Send Message action <br>
+In each of these actions, we provide the ID of the Discord channel on which we want to have ghostping logs <br>
 
 # Konfiguracja Report
 
