@@ -4,27 +4,27 @@
 ### Konfiguracja Ghostping
 
 **Wchodzimy do akcji `#9`** <br>
-W każdym z warunków mamy umieszczoną akcję Send Message <br>
-W każdej z tych akcji podajemy ID kanału Discord na którym chcemy mieć logi ghostpingów <br>
+**W każdym z warunków mamy umieszczoną akcję `Send Message`.** <br>
+**W każdej z tych akcji podajemy ID kanału Discord na którym chcemy mieć logi ghostpingów.** <br>
 
 ### Konfiguracja Report
 
-Wchodzimy do akcji #7 <br>
-W Channel ID wklejamy ID kanału na którym mają się pojawiać zgłoszenia <br>
+**Wchodzimy do akcji `#7`.** <br>
+**W Channel ID wklejamy ID kanału na którym mają się pojawiać zgłoszenia.** <br>
 
 ### Konfiguracja Weryfikacji
 
-Wchodzimy do akcji Send Message <br>
-Przechodzimy do zakładki Buttons <br>
-Wybieramy przycisk "Weryfikacja" <br>
-W akcji #2 zmieniamy ID roli na roli tej którą mamy otrzymać po weryfikacji <br>
+**Wchodzimy do akcji `Send Message`.** <br>
+**Przechodzimy do zakładki `Buttons`.** <br>
+**Wybieramy przycisk `"Weryfikacja"`.** <br>
+**W akcji `#2` zmieniamy ID roli na roli tej którą mamy otrzymać po weryfikacji.** <br>
 
 # Admin-DBM
 ## Raw date of administrative commands. Discord Bot Maker
 
 ### Ghostping Configuration
 
-We go to action #9 <br>
+**We go to action `#9`.** <br>
 In each of the conditions we have a Send Message action <br>
 In each of these actions, we provide the ID of the Discord channel on which we want to have ghostping logs <br>
 
