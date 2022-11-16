@@ -25,17 +25,17 @@
 ### Ghostping Configuration
 
 **We go to action `#9`.** <br>
-In each of the conditions we have a Send Message action <br>
-In each of these actions, we provide the ID of the Discord channel on which we want to have ghostping logs <br>
+**In each of the conditions we have a `Send Message` action.** <br>
+**In each of these actions, we provide the ID of the Discord channel on which we want to have ghostping logs.** <br>
 
 ### Report Configuration
 
-We go to action # 7 <br>
-In the Channel ID, paste the ID of the channel on which the reports should appear <br>
+**We go to action `#7`.** <br>
+**In the Channel ID, paste the ID of the channel on which the reports should appear.** <br>
 
 ### Verification Configuration
 
-We go to action Send Message <br>
-We go to the Buttons tab <br>
-Select the "Verification" button <br>
-In action #2, we change the role ID on the role that we are to receive after verification <br>
+**We go to action `Send Message`.** <br>
+**We go to the `Buttons` tab.** <br>
+**Select the `"Verification"` button.** <br>
+**In action `#2`, we change the role ID on the role that we are to receive after verification.** <br>
