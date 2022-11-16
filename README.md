@@ -3,7 +3,7 @@
 
 ### Konfiguracja Ghostping
 
-Wchodzimy do akcji #9 <br>
+#### Wchodzimy do akcji #9 <br>
 W każdym z warunków mamy umieszczoną akcję Send Message <br>
 W każdej z tych akcji podajemy ID kanału Discord na którym chcemy mieć logi ghostpingów <br>
 
